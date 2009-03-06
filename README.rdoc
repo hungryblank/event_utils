@@ -1,0 +1,7 @@
+= event_utils
+
+Description goes here.
+
+== Copyright
+
+Copyright (c) 2009 Paolo Negri. See LICENSE for details.
