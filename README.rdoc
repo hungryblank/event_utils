@@ -1,6 +1,31 @@
 = event_utils
 
-Description goes here.
+EventUtils is meant to provide modules and classes to help building services
+on top of EventMachine without having to cope with some of the mechnics of
+eventmachine itself.
+
+the first implemented facility id EventUtils::DeferredLoop
+
+it makes possible to perform action on groups of deferrable objects in an
+intuitive way, and without having to take care of starting/stopping the
+EventMachine reactor
+
+example:
+
+  d1 and d2 are two deferrables
+  and we want to compare them but the comparaison is only feasible when
+  d1 and d2 have both deferred status set.
+
+  In this case the code will look like
+
+  in_deferred_loop do
+    waiting_for d1, d2 do
+      d1 > d2
+    end
+  end
+
+Check http://assertbuggy.blogspot.com for further informations and for more
+information and tutorials
 
 == Copyright
 
