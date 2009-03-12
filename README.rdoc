@@ -4,7 +4,7 @@ EventUtils is meant to provide modules and classes to help building services
 on top of EventMachine without having to cope with some of the mechnics of
 eventmachine itself.
 
-the first implemented facility id EventUtils::DeferredLoop
+the first implemented facility is EventUtils::DeferredLoop
 
 it makes possible to perform action on groups of deferrable objects in an
 intuitive way, and without having to take care of starting/stopping the
@@ -17,6 +17,9 @@ example:
   d1 and d2 have both deferred status set.
 
   In this case the code will look like
+
+  require 'event_utils'
+  include EventUtils
 
   in_deferred_loop do
     waiting_for d1, d2 do
