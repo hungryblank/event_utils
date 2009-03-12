@@ -5,7 +5,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "event_utils"
-    gem.summary = %Q{TODO}
+    gem.summary = %Q{provides various facilities to help building tools on top of eventmachine}
     gem.email = "hungryblank@gmail.com"
     gem.homepage = "http://github.com/hungryblank/event_utils"
     gem.authors = ["Paolo Negri"]
