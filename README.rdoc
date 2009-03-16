@@ -27,8 +27,7 @@ example:
     end
   end
 
-Check http://assertbuggy.blogspot.com for further informations and for more
-information and tutorials
+Check http://assertbuggy.blogspot.com for further informations and tutorials
 
 == Copyright
 
